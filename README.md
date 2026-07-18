@@ -1,25 +1,31 @@
-🍳 Agente de IA - Cozinheira Profissional
+🍳 Agente de IA — Cozinheira Profissional
 
-Um projeto simples em Python que utiliza a biblioteca Agno e o modelo GPT-4o Mini da OpenAI para criar uma assistente virtual especializada em culinária. O agente responde perguntas sobre receitas, técnicas de cozinha, ingredientes e dicas gastronômicas diretamente pelo terminal.
+Um agente de inteligência artificial desenvolvido em Python utilizando a biblioteca Agno e o modelo GPT-4o Mini da OpenAI. O projeto permite interagir com uma assistente especializada em culinária diretamente pelo terminal.
 
-📋 Funcionalidades
-🤖 Agente de IA especializado em culinária.
-🍝 Responde dúvidas sobre receitas e ingredientes.
-🔥 Dá dicas de preparo e técnicas de cozinha.
-💬 Interface simples via terminal.
-✅ Encerramento do programa com o comando sair.
-🛠️ Tecnologias utilizadas
+✨ Funcionalidades
+Assistente especializada em culinária
+Responde perguntas sobre receitas e ingredientes
+Fornece dicas de preparo e técnicas de cozinha
+Interface simples via terminal
+Encerramento com o comando sair
+🛠️ Tecnologias
 Python 3.10+
 Agno
 OpenAI API
 python-dotenv
-📦 Instalação
+📁 Estrutura do Projeto
+.
+├── main.py
+├── .env
+├── requirements.txt
+└── README.md
+🚀 Instalação
 
 Clone o repositório:
 
 git clone https://github.com/seu-usuario/seu-repositorio.git
 
-Entre na pasta:
+Acesse a pasta do projeto:
 
 cd seu-repositorio
 
@@ -28,45 +34,46 @@ Instale as dependências:
 pip install agno openai python-dotenv
 ⚙️ Configuração
 
-Crie um arquivo chamado .env na raiz do projeto.
-
-Exemplo:
+Crie um arquivo .env na raiz do projeto e adicione sua chave da OpenAI:
 
 OPENAI_API_KEY=sua_chave_da_openai
-▶️ Executando o projeto
+▶️ Como executar
 
-Execute:
+Execute o projeto:
 
 python main.py
-
-Exemplo de uso:
-
+💬 Exemplo
 Digite: Como faço um bolo de chocolate?
 
 Resposta:
-Para fazer um bolo de chocolate você precisará de...
+Para preparar um bolo de chocolate macio você vai precisar de...
 
 Para encerrar:
 
 Digite: sair
+
 Encerrando Agent 🤖
-📂 Estrutura do projeto
-.
-├── main.py
-├── .env
-├── README.md
-└── requirements.txt
-📄 Código principal
+🧠 Configuração do Agente
+Agent(
+    model=OpenAIChat(id="gpt-4o-mini"),
+    description="Você é uma cozinheira profissional",
+    markdown=True
+)
 
-O projeto cria um agente utilizando o modelo GPT-4o Mini com a seguinte descrição:
+A descrição define o comportamento do agente, fazendo com que todas as respostas sejam voltadas para culinária.
 
-description="Você é uma cozinheira profissional"
-
-Isso faz com que todas as respostas sejam voltadas para culinária.
-
-📌 Exemplo de perguntas
-Como fazer pão caseiro?
-Qual a diferença entre fermento biológico e químico?
-Como cozinhar arroz soltinho?
-Qual o melhor tempero para frango?
+💡 Exemplos de perguntas
+Como fazer arroz soltinho?
+Qual o melhor tempero para carne?
 Como substituir ovos em uma receita?
+O que posso fazer com frango e batata?
+Como armazenar alimentos corretamente?
+📄 Licença
+
+Este projeto é destinado a fins de estudo e aprendizado.
+
+<div align="center">
+
+Desenvolvido com Python, Agno e OpenAI.
+
+</div>
