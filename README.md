@@ -1,79 +1,165 @@
-🍳 Agente de IA — Cozinheira Profissional
+<div align="center">
 
-Um agente de inteligência artificial desenvolvido em Python utilizando a biblioteca Agno e o modelo GPT-4o Mini da OpenAI. O projeto permite interagir com uma assistente especializada em culinária diretamente pelo terminal.
+# 🍳 Agente de IA — Cozinheira Profissional
 
-✨ Funcionalidades
-Assistente especializada em culinária
-Responde perguntas sobre receitas e ingredientes
-Fornece dicas de preparo e técnicas de cozinha
-Interface simples via terminal
-Encerramento com o comando sair
-🛠️ Tecnologias
-Python 3.10+
-Agno
-OpenAI API
-python-dotenv
-📁 Estrutura do Projeto
+Um agente de inteligência artificial desenvolvido em **Python** utilizando **Agno** e **OpenAI** para responder perguntas sobre culinária diretamente pelo terminal.
+
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o--Mini-412991?style=for-the-badge)
+![Agno](https://img.shields.io/badge/Framework-Agno-black?style=for-the-badge)
+
+</div>
+
+---
+
+## 📖 Sobre
+
+Este projeto cria um agente conversacional especializado em culinária utilizando a biblioteca **Agno**. O usuário pode fazer perguntas sobre receitas, ingredientes, técnicas de preparo e receber respostas geradas pelo modelo **GPT-4o Mini** da OpenAI.
+
+---
+
+## ✨ Funcionalidades
+
+- 🍝 Responde dúvidas sobre receitas
+- 🥘 Sugere pratos e ingredientes
+- 🔥 Explica técnicas culinárias
+- 💬 Interface simples via terminal
+- ⚡ Respostas em Markdown
+- 🚪 Encerramento com o comando `sair`
+
+---
+
+## 🛠️ Tecnologias
+
+| Tecnologia | Descrição |
+|------------|-----------|
+| Python | Linguagem principal |
+| Agno | Framework para criação do agente |
+| OpenAI | Modelo de linguagem |
+| python-dotenv | Gerenciamento das variáveis de ambiente |
+
+---
+
+## 📂 Estrutura
+
+```text
 .
 ├── main.py
 ├── .env
 ├── requirements.txt
 └── README.md
-🚀 Instalação
+```
 
-Clone o repositório:
+---
 
+## ⚙️ Instalação
+
+### 1. Clone o repositório
+
+```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
+```
 
-Acesse a pasta do projeto:
+### 2. Entre na pasta
 
+```bash
 cd seu-repositorio
+```
 
-Instale as dependências:
+### 3. Instale as dependências
 
+```bash
 pip install agno openai python-dotenv
-⚙️ Configuração
+```
 
-Crie um arquivo .env na raiz do projeto e adicione sua chave da OpenAI:
+---
 
+## 🔑 Configuração
+
+Crie um arquivo `.env` na raiz do projeto.
+
+```env
 OPENAI_API_KEY=sua_chave_da_openai
-▶️ Como executar
+```
 
-Execute o projeto:
+---
 
+## ▶️ Executando
+
+```bash
 python main.py
-💬 Exemplo
-Digite: Como faço um bolo de chocolate?
+```
+
+---
+
+## 💻 Exemplo de uso
+
+```text
+Digite: Como faço um molho branco?
 
 Resposta:
-Para preparar um bolo de chocolate macio você vai precisar de...
 
-Para encerrar:
+Para preparar um molho branco clássico você vai precisar de:
 
+• Manteiga
+• Farinha de trigo
+• Leite
+• Sal
+• Noz-moscada
+
+...
+```
+
+Para finalizar:
+
+```text
 Digite: sair
 
 Encerrando Agent 🤖
-🧠 Configuração do Agente
-Agent(
+```
+
+---
+
+## 🧠 Configuração do Agente
+
+```python
+agente = Agent(
     model=OpenAIChat(id="gpt-4o-mini"),
     description="Você é uma cozinheira profissional",
     markdown=True
 )
+```
 
-A descrição define o comportamento do agente, fazendo com que todas as respostas sejam voltadas para culinária.
+---
 
-💡 Exemplos de perguntas
-Como fazer arroz soltinho?
-Qual o melhor tempero para carne?
-Como substituir ovos em uma receita?
-O que posso fazer com frango e batata?
-Como armazenar alimentos corretamente?
-📄 Licença
+## 💬 Exemplos de perguntas
 
-Este projeto é destinado a fins de estudo e aprendizado.
+- Como fazer arroz soltinho?
+- Qual o melhor corte para churrasco?
+- Como substituir ovos em uma receita?
+- Quanto tempo cozinhar macarrão?
+- O que fazer com peito de frango?
+
+---
+
+## 📌 Próximas melhorias
+
+- [ ] Interface Web
+- [ ] Histórico de conversas
+- [ ] Memória entre sessões
+- [ ] Escolha de diferentes especialidades
+- [ ] Suporte a múltiplos modelos
+
+---
+
+## 📄 Licença
+
+Este projeto é destinado para fins de estudo e aprendizado.
+
+---
 
 <div align="center">
 
-Desenvolvido com Python, Agno e OpenAI.
+Desenvolvido com ❤️ utilizando **Python**, **Agno** e **OpenAI**.
 
 </div>
